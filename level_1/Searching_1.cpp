@@ -11,12 +11,16 @@
 // rectangle.
 bool isSilverRectangle(double height, double width) {
     // First find height:width.
-    double ratio1 = height/ width;
+    double ratio1 = height / width;
 
     // Now, find width::height
     double ratio2 = width / height;
 
     // Now check if either of the ratios is in the interval.
+    //
+    // In general, you should not write more than 80 characters in
+    // a single line. So, you should break your lines if it exceeds.
+    // That's why I've moved the second check to the next line.
     return (ratio1 >= 1.6 && ratio1 <= 1.7) 
                 || (ratio2 >= 1.6 || ratio2 <= 1.7);
 }
